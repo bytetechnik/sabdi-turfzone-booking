@@ -47,6 +47,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        turf: {
+          green: "hsl(142 76% 36%)",
+          blue: "hsl(217 91% 60%)",
+          orange: "hsl(38 92% 50%)",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
