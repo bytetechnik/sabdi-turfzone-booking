@@ -1,41 +1,71 @@
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroImage from "@/assets/hero-turf.jpg";
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToBooking = () => {
     document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Parallax Effect */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-subtle-zoom"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+        {/* Modern Gradient Overlay with Mesh Effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-secondary/90 to-primary/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
       </div>
       
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in">
-          Sabdi TurfZone
+      {/* Animated Grid Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px),
+                           linear-gradient(90deg, hsl(var(--primary-foreground)) 1px, transparent 1px)`,
+          backgroundSize: '50px 50px'
+        }} />
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        {/* Decorative Element */}
+        <div className="w-20 h-1 bg-accent mx-auto mb-8 animate-expand" />
+        
+        <h1 className="text-6xl md:text-8xl font-black text-primary-foreground mb-6 animate-fade-in tracking-tight">
+          {t("heroTitle")}
         </h1>
-        <p className="text-xl md:text-2xl text-primary-foreground/95 mb-8 animate-fade-in-delay">
-          Premium Turf Fields for Cricket & Football
+        
+        <p className="text-xl md:text-3xl text-primary-foreground/95 mb-12 animate-fade-in-delay font-light tracking-wide">
+          {t("heroSubtitle")}
         </p>
+        
         <Button 
           size="lg" 
           onClick={scrollToBooking}
-          className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+          className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-12 py-7 text-xl shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-110 rounded-full group"
         >
-          Book Your Slot Now
+          {t("bookNow")}
+          <ChevronDown className="ml-2 h-5 w-5 animate-bounce group-hover:translate-y-1 transition-transform" />
         </Button>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-3 bg-primary-foreground/50 rounded-full animate-pulse" />
+        </div>
       </div>
 
       <style>{`
         @keyframes fade-in {
           from {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(30px);
           }
           to {
             opacity: 1;
@@ -43,12 +73,49 @@ const Hero = () => {
           }
         }
         
+        @keyframes fade-in-delay {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes expand {
+          from {
+            width: 0;
+          }
+          to {
+            width: 5rem;
+          }
+        }
+        
+        @keyframes subtle-zoom {
+          0%, 100% {
+            transform: scale(1.1);
+          }
+          50% {
+            transform: scale(1.15);
+          }
+        }
+        
         .animate-fade-in {
-          animation: fade-in 0.8s ease-out;
+          animation: fade-in 1s ease-out;
         }
         
         .animate-fade-in-delay {
-          animation: fade-in 0.8s ease-out 0.2s both;
+          animation: fade-in-delay 1s ease-out 0.3s both;
+        }
+        
+        .animate-expand {
+          animation: expand 1s ease-out 0.5s both;
+        }
+        
+        .animate-subtle-zoom {
+          animation: subtle-zoom 20s ease-in-out infinite;
         }
       `}</style>
     </section>

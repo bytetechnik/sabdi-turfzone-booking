@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { Calendar } from "@/components/ui/calendar";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";
 
 interface BookingFormProps {
@@ -12,6 +13,7 @@ interface BookingFormProps {
 }
 
 const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
+  const { t } = useLanguage();
   const [date, setDate] = useState<Date | undefined>(new Date());
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -35,12 +37,12 @@ const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
 
   return (
     <Card className="p-6">
-      <h3 className="text-2xl font-bold mb-6 text-foreground">Complete Your Booking</h3>
+      <h3 className="text-2xl font-bold mb-6 text-foreground">{t("completeBooking")}</h3>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <div>
-              <Label htmlFor="name">Full Name *</Label>
+              <Label htmlFor="name">{t("fullName")} *</Label>
               <Input
                 id="name"
                 value={name}
@@ -51,7 +53,7 @@ const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
             </div>
             
             <div>
-              <Label htmlFor="phone">Phone Number *</Label>
+              <Label htmlFor="phone">{t("phoneNumber")} *</Label>
               <Input
                 id="phone"
                 type="tel"
@@ -63,7 +65,7 @@ const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
             </div>
             
             <div>
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">{t("email")}</Label>
               <Input
                 id="email"
                 type="email"
@@ -75,7 +77,7 @@ const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
           </div>
 
           <div>
-            <Label className="mb-2 block">Select Date *</Label>
+            <Label className="mb-2 block">{t("selectDate")} *</Label>
             <Calendar
               mode="single"
               selected={date}
@@ -92,7 +94,7 @@ const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
           disabled={!selectedSport || !selectedSlot}
         >
-          Confirm Booking
+          {t("confirmBooking")}
         </Button>
       </form>
     </Card>

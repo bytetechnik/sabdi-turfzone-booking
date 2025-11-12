@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface TimeSlotPickerProps {
   selectedSlot: string | null;
@@ -7,6 +8,7 @@ interface TimeSlotPickerProps {
 }
 
 const TimeSlotPicker = ({ selectedSlot, onSelectSlot }: TimeSlotPickerProps) => {
+  const { t } = useLanguage();
   const timeSlots = [
     { id: "6am-8am", time: "6:00 AM - 8:00 AM", price: "₹800" },
     { id: "8am-10am", time: "8:00 AM - 10:00 AM", price: "₹1000" },
@@ -20,7 +22,7 @@ const TimeSlotPicker = ({ selectedSlot, onSelectSlot }: TimeSlotPickerProps) => 
 
   return (
     <Card className="p-6">
-      <h3 className="text-2xl font-bold mb-6 text-foreground">Select Time Slot</h3>
+      <h3 className="text-2xl font-bold mb-6 text-foreground">{t("selectTimeSlot")}</h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {timeSlots.map((slot) => (
           <Button

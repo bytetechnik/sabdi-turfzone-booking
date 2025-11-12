@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 import cricketImage from "@/assets/cricket.jpg";
 import footballImage from "@/assets/football.jpg";
 
@@ -8,18 +9,20 @@ interface SportSelectionProps {
 }
 
 const SportSelection = ({ selectedSport, onSelectSport }: SportSelectionProps) => {
+  const { t } = useLanguage();
+  
   const sports = [
     {
       id: "cricket",
-      name: "Cricket",
+      name: t("cricket"),
       image: cricketImage,
-      description: "Professional cricket pitch with quality turf",
+      description: t("cricketDesc"),
     },
     {
       id: "football",
-      name: "Football",
+      name: t("football"),
       image: footballImage,
-      description: "Full-size football field with premium surface",
+      description: t("footballDesc"),
     },
   ];
 
