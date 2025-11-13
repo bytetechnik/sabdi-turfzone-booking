@@ -18,8 +18,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 shadow-[0_4px_24px_-8px_rgba(139,92,246,0.3)]">
+      <div className="max-w-7xl mx-auto px-4 relative">
+        {/* Gradient Accent Line */}
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3">
@@ -56,14 +58,14 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-white/10 bg-black/90">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden py-4 border-t border-white/10 bg-black/95 backdrop-blur-lg shadow-lg">
+            <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <NavLink
                   key={item.to}
                   to={item.to}
-                  className="text-white/80 hover:text-white transition-colors font-medium px-4 py-2"
-                  activeClassName="text-primary font-bold bg-primary/10 rounded-lg"
+                  className="text-white/80 hover:text-white hover:bg-white/5 transition-all font-medium px-4 py-3 rounded-lg"
+                  activeClassName="text-primary font-bold bg-primary/10 border border-primary/20"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
