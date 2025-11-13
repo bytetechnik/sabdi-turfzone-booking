@@ -76,7 +76,7 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-20 text-center px-4 max-w-5xl mx-auto";
+      <div className="relative z-20 text-center px-4 max-w-5xl mx-auto">
         {/* Decorative Element */}
         <div className="w-20 h-1 bg-accent mx-auto mb-8 animate-expand" />
         
