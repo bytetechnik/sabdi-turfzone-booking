@@ -8,7 +8,6 @@ import SportSelection from "@/components/SportSelection";
 import TimeSlotPicker from "@/components/TimeSlotPicker";
 import BookingForm from "@/components/BookingForm";
 import Contact from "@/components/Contact";
-import LanguageToggle from "@/components/LanguageToggle";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FAQ from "@/components/FAQ";
 
@@ -20,7 +19,6 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <LanguageToggle />
       <Hero />
       <Features />
       

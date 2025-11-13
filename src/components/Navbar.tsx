@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "@/components/NavLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.jpg";
 
 const Navbar = () => {
-  const { t } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -43,6 +43,17 @@ const Navbar = () => {
                 {item.label}
               </NavLink>
             ))}
+            
+            {/* Language Toggle - Desktop */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setLanguage(language === "en" ? "bn" : "en")}
+              className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all text-white"
+            >
+              <Languages className="mr-2 h-4 w-4" />
+              {language === "en" ? "বাংলা" : "English"}
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -71,6 +82,17 @@ const Navbar = () => {
                   {item.label}
                 </NavLink>
               ))}
+              
+              {/* Language Toggle - Mobile */}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setLanguage(language === "en" ? "bn" : "en")}
+                className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all text-white mx-4"
+              >
+                <Languages className="mr-2 h-4 w-4" />
+                {language === "en" ? "বাংলা" : "English"}
+              </Button>
             </div>
           </div>
         )}
