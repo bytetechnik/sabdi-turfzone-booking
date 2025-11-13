@@ -20,8 +20,8 @@ const Contact = () => {
             <MapPin className="w-10 h-10 text-primary mb-4" />
             <h3 className="font-bold mb-2 text-card-foreground">{t("location")}</h3>
             <p className="text-muted-foreground">
-              123 Sports Complex<br />
-              City Center, State 123456
+              Nirpodi Purbopara near Bridge<br />
+              Sabdi, Bondorm Narayonganj
             </p>
           </Card>
 
