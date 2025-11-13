@@ -55,6 +55,87 @@ const translations = {
     
     // Footer
     allRightsReserved: "All rights reserved",
+    
+    // Navigation
+    aboutUs: "About Us",
+    amenities: "Amenities & Facilities",
+    gallery: "Gallery",
+    contactUs: "Contact Us",
+    privacyPolicy: "Privacy Policy",
+    termsConditions: "Terms & Conditions",
+    home: "Home",
+    
+    // About
+    aboutUsDesc: "Learn more about Sabdi TurfZone and our commitment to providing the best sports facilities.",
+    ourStory: "Our Story",
+    ourStoryDesc: "Sabdi TurfZone was established in 2025 with a vision to provide world-class sports facilities to our community. Located at Nirpodi Purbopara near Bridge, Sabdi, Bondorm Narayonganj, we offer premium turf fields for cricket and football enthusiasts.",
+    ourMission: "Our Mission",
+    ourMissionDesc: "To create an inclusive sports environment where athletes of all levels can train, compete, and excel. We are committed to maintaining the highest standards of facility management and customer service.",
+    whyChooseUs: "Why Choose Us",
+    whyChooseUsDesc: "Professional-grade turf surfaces, flexible booking hours, competitive pricing, and excellent customer support make us the top choice for sports enthusiasts.",
+    
+    // Amenities
+    amenitiesDesc: "We offer comprehensive facilities to ensure your comfort and convenience.",
+    parking: "Parking Space",
+    parkingDesc: "Ample parking space available for all visitors with easy access to the turf.",
+    lighting: "Floodlights",
+    lightingDesc: "Professional-grade floodlighting system for evening and night matches.",
+    restrooms: "Clean Restrooms",
+    restroomsDesc: "Well-maintained restroom facilities for your convenience.",
+    drinkingWater: "Drinking Water",
+    drinkingWaterDesc: "Clean drinking water facilities available throughout the premises.",
+    firstAid: "First Aid",
+    firstAidDesc: "Basic first aid facilities and emergency support available on-site.",
+    
+    // Gallery
+    galleryDesc: "Explore our premium turf facilities through our photo gallery.",
+    viewAllPhotos: "View All Photos",
+    
+    // WhatsApp
+    bookViaWhatsApp: "Book via WhatsApp",
+    whatsappMessage: "Hello! I would like to book a turf slot at Sabdi TurfZone. Could you please provide more information?",
+    
+    // FAQ
+    faqTitle: "Frequently Asked Questions",
+    faqDesc: "Find answers to common questions about booking and using our facilities",
+    faqBookingQuestion: "How do I book a turf slot?",
+    faqBookingAnswer: "You can book a slot through our website by selecting your sport, choosing a time slot, and filling in your details. Alternatively, contact us via WhatsApp or phone for quick booking assistance.",
+    faqPricingQuestion: "What are the pricing rates?",
+    faqPricingAnswer: "Cricket turf: ৳2,000-3,000 per hour (varies by time). Football turf: ৳2,500-3,500 per hour (varies by time). Evening and weekend slots may have different rates. Contact us for current pricing and special packages.",
+    faqCancellationQuestion: "What is the cancellation policy?",
+    faqCancellationAnswer: "Cancellations made 24 hours before the booking time are eligible for a full refund. Cancellations made less than 24 hours in advance may incur a cancellation fee. No refund for no-shows.",
+    faqTimingQuestion: "What are the operating hours?",
+    faqTimingAnswer: "We are open every day from 6:00 AM to 10:00 PM. You can book hourly slots within these timings. Early morning and late evening slots are subject to availability.",
+    faqPaymentQuestion: "What payment methods do you accept?",
+    faqPaymentAnswer: "We accept cash, bKash, Nagad, Rocket, and bank transfers. Advance payment may be required to confirm your booking. Payment details will be shared upon booking confirmation.",
+    faqRulesQuestion: "What are the facility rules?",
+    faqRulesAnswer: "Proper sports footwear required. No spikes allowed on turf. Respect other players and facility property. No smoking or alcohol on premises. Follow staff instructions at all times. Damage to facility will be charged.",
+    faqEquipmentQuestion: "Do you provide sports equipment?",
+    faqEquipmentAnswer: "Basic equipment like balls and cones are available. However, we recommend bringing your own equipment for best experience. Sports gear can be arranged on request with prior notice.",
+    faqWeatherQuestion: "What happens in bad weather?",
+    faqWeatherAnswer: "In case of heavy rain or severe weather conditions, bookings may be rescheduled or refunded. We will notify you as soon as possible. Our turf has good drainage for light rain play.",
+    
+    // Privacy Policy
+    privacyPolicyTitle: "Privacy Policy",
+    informationCollection: "Information Collection",
+    informationCollectionDesc: "We collect information you provide when booking our turf facilities, including your name, contact details, and booking preferences.",
+    useOfInformation: "Use of Information",
+    useOfInformationDesc: "Your information is used to process bookings, communicate with you about your reservations, and improve our services.",
+    dataProtection: "Data Protection",
+    dataProtectionDesc: "We implement appropriate security measures to protect your personal information against unauthorized access or disclosure.",
+    contactPrivacy: "Contact Us",
+    contactPrivacyDesc: "If you have any questions about our privacy policy, please contact us at info@sabditurfzone.com",
+    
+    // Terms & Conditions
+    termsConditionsTitle: "Terms & Conditions",
+    bookingTerms: "Booking Terms",
+    bookingTermsDesc: "All bookings are subject to availability. A confirmed booking guarantees your time slot for the specified date and time.",
+    cancellationPolicy: "Cancellation Policy",
+    cancellationPolicyDesc: "Cancellations must be made at least 24 hours in advance for a full refund. Late cancellations may incur charges.",
+    facilityRules: "Facility Rules",
+    facilityRulesDesc: "Users must respect the facility and other players. Appropriate sports attire and footwear are required. Any damage to the facility will be charged to the booking party.",
+    liability: "Liability",
+    liabilityDesc: "Sabdi TurfZone is not responsible for any injuries sustained while using our facilities. Users participate at their own risk.",
   },
   bn: {
     // Hero
@@ -83,10 +164,10 @@ const translations = {
     cricket: "ক্রিকেট",
     cricketDesc: "মানসম্মত টার্ফ সহ পেশাদার ক্রিকেট পিচ",
     football: "ফুটবল",
-    footballDesc: "প্রিমিয়াম পৃষ্ঠ সহ পূর্ণ আকারের ফুটবল মাঠ",
+    footballDesc: "সম্পূর্ণ আকারের ফুটবল মাঠ প্রিমিয়াম পৃষ্ঠ সহ",
     selectTimeSlot: "সময় স্লট নির্বাচন করুন",
     completeBooking: "আপনার বুকিং সম্পূর্ণ করুন",
-    fullName: "পুরো নাম",
+    fullName: "সম্পূর্ণ নাম",
     phoneNumber: "ফোন নম্বর",
     email: "ইমেইল",
     selectDate: "তারিখ নির্বাচন করুন",
@@ -97,15 +178,98 @@ const translations = {
     getInTouchDesc: "প্রশ্ন আছে? আমরা সাহায্য করতে এখানে আছি!",
     location: "অবস্থান",
     phone: "ফোন",
-    hours: "সময়",
+    hours: "সময়সূচী",
     everyDay: "প্রতিদিন",
     
     // Footer
-    allRightsReserved: "সর্বস্বত্ব সংরক্ষিত",
+    allRightsReserved: "সমস্ত অধিকার সংরক্ষিত",
+    
+    // Navigation
+    aboutUs: "আমাদের সম্পর্কে",
+    amenities: "সুবিধা ও সুযোগ-সুবিধা",
+    gallery: "গ্যালারি",
+    contactUs: "যোগাযোগ করুন",
+    privacyPolicy: "গোপনীয়তা নীতি",
+    termsConditions: "শর্তাবলী",
+    home: "হোম",
+    
+    // About
+    aboutUsDesc: "সাবদি টার্ফজোন সম্পর্কে জানুন এবং সেরা ক্রীড়া সুবিধা প্রদানের জন্য আমাদের প্রতিশ্রুতি।",
+    ourStory: "আমাদের গল্প",
+    ourStoryDesc: "সাবদি টার্ফজোন ২০২৫ সালে প্রতিষ্ঠিত হয়েছিল আমাদের সম্প্রদায়কে বিশ্বমানের ক্রীড়া সুবিধা প্রদানের লক্ষ্যে। নিরপদি পূর্বপাড়া ব্রিজের কাছে, সাবদি, বন্দর নারায়ণগঞ্জে অবস্থিত, আমরা ক্রিকেট এবং ফুটবল উত্সাহীদের জন্য প্রিমিয়াম টার্ফ মাঠ সরবরাহ করি।",
+    ourMission: "আমাদের লক্ষ্য",
+    ourMissionDesc: "একটি অন্তর্ভুক্তিমূলক ক্রীড়া পরিবেশ তৈরি করা যেখানে সমস্ত স্তরের ক্রীড়াবিদরা প্রশিক্ষণ, প্রতিযোগিতা এবং উৎকর্ষ অর্জন করতে পারে। আমরা সুবিধা ব্যবস্থাপনা এবং গ্রাহক সেবার সর্বোচ্চ মান বজায় রাখতে প্রতিশ্রুতিবদ্ধ।",
+    whyChooseUs: "কেন আমাদের চয়ন করবেন",
+    whyChooseUsDesc: "পেশাদার-গ্রেড টার্ফ পৃষ্ঠ, নমনীয় বুকিং সময়, প্রতিযোগিতামূলক মূল্য এবং চমৎকার গ্রাহক সহায়তা আমাদের ক্রীড়া উত্সাহীদের জন্য শীর্ষ পছন্দ করে তোলে।",
+    
+    // Amenities
+    amenitiesDesc: "আমরা আপনার আরাম এবং সুবিধা নিশ্চিত করতে ব্যাপক সুবিধা প্রদান করি।",
+    parking: "পার্কিং স্পেস",
+    parkingDesc: "টার্ফে সহজ প্রবেশাধিকার সহ সমস্ত দর্শকদের জন্য পর্যাপ্ত পার্কিং স্থান উপলব্ধ।",
+    lighting: "ফ্লাডলাইট",
+    lightingDesc: "সন্ধ্যা এবং রাতের ম্যাচের জন্য পেশাদার-গ্রেড ফ্লাডলাইটিং সিস্টেম।",
+    restrooms: "পরিষ্কার টয়লেট",
+    restroomsDesc: "আপনার সুবিধার জন্য সুরক্ষিত টয়লেট সুবিধা।",
+    drinkingWater: "পানীয় জল",
+    drinkingWaterDesc: "প্রাঙ্গণ জুড়ে পরিষ্কার পানীয় জল সুবিধা উপলব্ধ।",
+    firstAid: "প্রাথমিক চিকিৎসা",
+    firstAidDesc: "সাইটে মৌলিক প্রাথমিক চিকিৎসা সুবিধা এবং জরুরি সহায়তা উপলব্ধ।",
+    
+    // Gallery
+    galleryDesc: "আমাদের ফটো গ্যালারির মাধ্যমে আমাদের প্রিমিয়াম টার্ফ সুবিধা দেখুন।",
+    viewAllPhotos: "সব ফটো দেখুন",
+    
+    // WhatsApp
+    bookViaWhatsApp: "হোয়াটসঅ্যাপের মাধ্যমে বুক করুন",
+    whatsappMessage: "হ্যালো! আমি সাবদি টার্ফজোনে একটি টার্ফ স্লট বুক করতে চাই। আপনি কি আরও তথ্য প্রদান করতে পারেন?",
+    
+    // FAQ
+    faqTitle: "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী",
+    faqDesc: "বুকিং এবং আমাদের সুবিধা ব্যবহার সম্পর্কে সাধারণ প্রশ্নের উত্তর খুঁজুন",
+    faqBookingQuestion: "আমি কীভাবে টার্ফ স্লট বুক করব?",
+    faqBookingAnswer: "আপনি আমাদের ওয়েবসাইটের মাধ্যমে আপনার খেলা নির্বাচন করে, একটি সময় স্লট চয়ন করে এবং আপনার বিবরণ পূরণ করে একটি স্লট বুক করতে পারেন। বিকল্পভাবে, দ্রুত বুকিং সহায়তার জন্য হোয়াটসঅ্যাপ বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+    faqPricingQuestion: "মূল্য হার কত?",
+    faqPricingAnswer: "ক্রিকেট টার্ফ: ৳২,০০০-৩,০০০ প্রতি ঘণ্টা (সময় অনুযায়ী পরিবর্তিত)। ফুটবল টার্ফ: ৳২,৫০০-৩,৫০০ প্রতি ঘণ্টা (সময় অনুযায়ী পরিবর্তিত)। সন্ধ্যা এবং সপ্তাহান্তের স্লটে বিভিন্ন হার থাকতে পারে। বর্তমান মূল্য এবং বিশেষ প্যাকেজের জন্য আমাদের সাথে যোগাযোগ করুন।",
+    faqCancellationQuestion: "বাতিলকরণ নীতি কী?",
+    faqCancellationAnswer: "বুকিং সময়ের ২৪ ঘণ্টা আগে করা বাতিলকরণ সম্পূর্ণ রিফান্ডের জন্য যোগ্য। ২৪ ঘণ্টারও কম সময়ে করা বাতিলকরণে বাতিলকরণ ফি লাগতে পারে। না-আসার জন্য কোনও রিফান্ড নেই।",
+    faqTimingQuestion: "পরিচালন সময় কী?",
+    faqTimingAnswer: "আমরা প্রতিদিন সকাল ৬:০০ টা থেকে রাত ১০:০০ টা পর্যন্ত খোলা থাকি। আপনি এই সময়ের মধ্যে প্রতি ঘণ্টায় স্লট বুক করতে পারেন। ভোরবেলা এবং গভীর সন্ধ্যার স্লট প্রাপ্যতা সাপেক্ষে।",
+    faqPaymentQuestion: "আপনারা কোন পেমেন্ট পদ্ধতি গ্রহণ করেন?",
+    faqPaymentAnswer: "আমরা নগদ, বিকাশ, নগদ, রকেট এবং ব্যাংক স্থানান্তর গ্রহণ করি। আপনার বুকিং নিশ্চিত করতে অগ্রিম পেমেন্ট প্রয়োজন হতে পারে। বুকিং নিশ্চিতকরণের পরে পেমেন্টের বিবরণ শেয়ার করা হবে।",
+    faqRulesQuestion: "সুবিধা নিয়মাবলী কী?",
+    faqRulesAnswer: "সঠিক ক্রীড়া পাদুকা প্রয়োজন। টার্ফে কোনো স্পাইক অনুমোদিত নয়। অন্যান্য খেলোয়াড় এবং সুবিধা সম্পত্তি সম্মান করুন। প্রাঙ্গণে ধূমপান বা অ্যালকোহল নেই। সর্বদা স্টাফ নির্দেশাবলী অনুসরণ করুন। সুবিধার ক্ষতি চার্জ করা হবে।",
+    faqEquipmentQuestion: "আপনারা কি ক্রীড়া সরঞ্জাম সরবরাহ করেন?",
+    faqEquipmentAnswer: "বল এবং শঙ্কুর মতো মৌলিক সরঞ্জাম উপলব্ধ। তবে, আমরা সেরা অভিজ্ঞতার জন্য আপনার নিজস্ব সরঞ্জাম আনার পরামর্শ দিই। পূর্ব বিজ্ঞপ্তির সাথে অনুরোধে ক্রীড়া সরঞ্জাম ব্যবস্থা করা যেতে পারে।",
+    faqWeatherQuestion: "খারাপ আবহাওয়ায় কী ঘটে?",
+    faqWeatherAnswer: "ভারী বৃষ্টি বা গুরুতর আবহাওয়া পরিস্থিতিতে, বুকিং পুনঃনির্ধারিত বা রিফান্ড করা যেতে পারে। আমরা যত তাড়াতাড়ি সম্ভব আপনাকে অবহিত করব। হালকা বৃষ্টির খেলার জন্য আমাদের টার্ফে ভাল নিষ্কাশন রয়েছে।",
+    
+    // Privacy Policy
+    privacyPolicyTitle: "গোপনীয়তা নীতি",
+    informationCollection: "তথ্য সংগ্রহ",
+    informationCollectionDesc: "আমরা আপনার টার্ফ সুবিধা বুকিং করার সময় আপনার নাম, যোগাযোগের বিবরণ এবং বুকিং পছন্দ সহ আপনার প্রদত্ত তথ্য সংগ্রহ করি।",
+    useOfInformation: "তথ্যের ব্যবহার",
+    useOfInformationDesc: "আপনার তথ্য বুকিং প্রক্রিয়া করতে, আপনার রিজার্ভেশন সম্পর্কে আপনার সাথে যোগাযোগ করতে এবং আমাদের সেবা উন্নত করতে ব্যবহৃত হয়।",
+    dataProtection: "ডেটা সুরক্ষা",
+    dataProtectionDesc: "আমরা অননুমোদিত প্রবেশ বা প্রকাশের বিরুদ্ধে আপনার ব্যক্তিগত তথ্য রক্ষা করতে উপযুক্ত নিরাপত্তা ব্যবস্থা বাস্তবায়ন করি।",
+    contactPrivacy: "আমাদের সাথে যোগাযোগ করুন",
+    contactPrivacyDesc: "আমাদের গোপনীয়তা নীতি সম্পর্কে আপনার কোনো প্রশ্ন থাকলে, অনুগ্রহ করে info@sabditurfzone.com এ আমাদের সাথে যোগাযোগ করুন",
+    
+    // Terms & Conditions
+    termsConditionsTitle: "শর্তাবলী",
+    bookingTerms: "বুকিং শর্তাবলী",
+    bookingTermsDesc: "সমস্ত বুকিং প্রাপ্যতা সাপেক্ষে। একটি নিশ্চিত বুকিং নির্দিষ্ট তারিখ এবং সময়ের জন্য আপনার সময় স্লট গ্যারান্টি দেয়।",
+    cancellationPolicy: "বাতিলকরণ নীতি",
+    cancellationPolicyDesc: "সম্পূর্ণ রিফান্ডের জন্য কমপক্ষে ২৪ ঘণ্টা আগে বাতিলকরণ করতে হবে। দেরিতে বাতিলকরণে চার্জ লাগতে পারে।",
+    facilityRules: "সুবিধা নিয়মাবলী",
+    facilityRulesDesc: "ব্যবহারকারীদের অবশ্যই সুবিধা এবং অন্যান্য খেলোয়াড়দের সম্মান করতে হবে। উপযুক্ত ক্রীড়া পোশাক এবং পাদুকা প্রয়োজন। সুবিধার যেকোনো ক্ষতি বুকিং পক্ষের কাছে চার্জ করা হবে।",
+    liability: "দায়বদ্ধতা",
+    liabilityDesc: "সাবদি টার্ফজোন আমাদের সুবিধা ব্যবহারের সময় যেকোনো আঘাতের জন্য দায়ী নয়। ব্যবহারকারীরা নিজের ঝুঁকিতে অংশগ্রহণ করেন।",
   },
 };
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined
+);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("en");
