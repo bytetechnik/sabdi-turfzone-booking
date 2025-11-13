@@ -1,10 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heroImage from "@/assets/hero-turf.jpg";
+import cricketImage from "@/assets/cricket.jpg";
+import footballImage from "@/assets/football.jpg";
 import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
   const { t } = useLanguage();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    { image: heroImage, alt: "Premium Turf Field" },
+    { image: cricketImage, alt: "Cricket Turf" },
+    { image: footballImage, alt: "Football Turf" },
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
   
   const scrollToBooking = () => {
     document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
@@ -12,18 +29,29 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Parallax Effect */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-subtle-zoom"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      {/* Image Slider */}
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-subtle-zoom"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            />
+          </div>
+        ))}
+        
         {/* Modern Gradient Overlay with Mesh Effect */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-secondary/90 to-primary/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-secondary/90 to-primary/95 z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)] z-10" />
       </div>
       
       {/* Animated Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `linear-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(var(--primary-foreground)) 1px, transparent 1px)`,
@@ -31,8 +59,24 @@ const Hero = () => {
         }} />
       </div>
       
+      {/* Slide Indicators */}
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              index === currentSlide 
+                ? "w-8 bg-primary-foreground" 
+                : "w-2 bg-primary-foreground/50 hover:bg-primary-foreground/70"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+      
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <div className="relative z-20 text-center px-4 max-w-5xl mx-auto";
         {/* Decorative Element */}
         <div className="w-20 h-1 bg-accent mx-auto mb-8 animate-expand" />
         
