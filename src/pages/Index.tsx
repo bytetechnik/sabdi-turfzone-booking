@@ -9,6 +9,8 @@ import TimeSlotPicker from "@/components/TimeSlotPicker";
 import BookingForm from "@/components/BookingForm";
 import Contact from "@/components/Contact";
 import LanguageToggle from "@/components/LanguageToggle";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -63,7 +65,9 @@ const Index = () => {
         </div>
       </section>
 
+      <FAQ />
       <Contact />
+      <WhatsAppButton />
 
       <footer className="bg-primary text-primary-foreground py-12 px-4">
         <div className="max-w-6xl mx-auto">
