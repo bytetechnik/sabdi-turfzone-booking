@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImage from "@/assets/hero-turf.jpg";
+import heroTurf from "@/assets/hero-turf.jpg";
+import cricketImage from "@/assets/cricket.jpg";
 import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -9,7 +10,8 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
-    { image: heroImage, alt: "Premium Turf Field" },
+    { image: heroTurf, alt: "Premium Turf Field" },
+    { image: cricketImage, alt: "Cricket Field" },
   ];
 
   useEffect(() => {
