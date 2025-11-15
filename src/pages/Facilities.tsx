@@ -1,25 +1,24 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Card } from "@/components/ui/card";
 import { 
-  Shirt, 
-  ParkingCircle, 
-  Lightbulb, 
-  Droplets, 
-  Heart, 
-  Bath, 
   Camera, 
   Package, 
+  ParkingCircle, 
   Building2, 
+  Bath, 
+  Shirt, 
   CircleDot, 
   Lock, 
-  Bus 
+  Droplets, 
+  Bus, 
+  Heart 
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
-const Amenities = () => {
+const Facilities = () => {
   const { t } = useLanguage();
 
-  const amenities = [
+  const facilities = [
     {
       icon: Camera,
       title: t("cctvMonitoring"),
@@ -75,11 +74,6 @@ const Amenities = () => {
       title: t("medicalFacilities"),
       description: t("medicalFacilitiesDesc"),
     },
-    {
-      icon: Lightbulb,
-      title: t("lighting"),
-      description: t("lightingDesc"),
-    },
   ];
 
   return (
@@ -89,20 +83,20 @@ const Amenities = () => {
       <main className="pt-32 pb-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 text-foreground">{t("amenities")}</h1>
+            <h1 className="text-5xl font-bold mb-6 text-foreground">{t("facilitiesTitle")}</h1>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              {t("amenitiesDesc")}
+              {t("facilitiesDesc")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {amenities.map((amenity, index) => (
+            {facilities.map((facility, index) => (
               <Card key={index} className="p-8 hover:shadow-lg transition-all duration-300">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <amenity.icon className="w-8 h-8 text-primary" />
+                  <facility.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-card-foreground">{amenity.title}</h3>
-                <p className="text-muted-foreground">{amenity.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-card-foreground">{facility.title}</h3>
+                <p className="text-muted-foreground">{facility.description}</p>
               </Card>
             ))}
           </div>
@@ -112,4 +106,5 @@ const Amenities = () => {
   );
 };
 
-export default Amenities;
+export default Facilities;
+

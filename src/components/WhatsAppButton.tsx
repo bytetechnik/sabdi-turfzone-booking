@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
   const { t } = useLanguage();
   
   const handleWhatsAppClick = () => {
-    const phoneNumber = "8801234567890"; // Replace with actual WhatsApp number
+    const phoneNumber = "8801911862666"; // WhatsApp number
     const message = encodeURIComponent(
       t("whatsappMessage")
     );

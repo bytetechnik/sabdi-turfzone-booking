@@ -59,7 +59,7 @@ const BookingForm = ({ selectedSport, selectedSlot }: BookingFormProps) => {
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="+91 XXXXX XXXXX"
+                placeholder="+880 1XXX XXXXXX"
                 required
               />
             </div>

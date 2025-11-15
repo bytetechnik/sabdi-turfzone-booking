@@ -4,6 +4,8 @@ import { NavLink } from "@/components/NavLink";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Facilities from "@/components/Facilities";
+import Pricing from "@/components/Pricing";
 import SportSelection from "@/components/SportSelection";
 import TimeSlotPicker from "@/components/TimeSlotPicker";
 import BookingForm from "@/components/BookingForm";
@@ -21,6 +23,8 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Features />
+      <Facilities />
+      <Pricing />
       
       <section id="booking" className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
@@ -79,7 +83,7 @@ const Index = () => {
             
             <div>
               <h4 className="font-bold mb-4">{t("contactUs")}</h4>
-              <p className="text-primary-foreground/90 mb-2">+91 98765 43210</p>
+              <p className="text-primary-foreground/90 mb-2">+880 1911 862 666</p>
               <p className="text-primary-foreground/90">info@sabditurfzone.com</p>
             </div>
             
@@ -96,9 +100,12 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="text-center pt-8 border-t border-primary-foreground/20">
+          <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/90">
               © 2025 {t("heroTitle")}. {t("allRightsReserved")}.
+            </p>
+            <p className="text-primary-foreground/80 text-sm">
+              Developed By <a href="https://bytetechnik.de" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors underline">ByteTechnik.de</a>
             </p>
           </div>
         </div>

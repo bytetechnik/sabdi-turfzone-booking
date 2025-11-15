@@ -10,14 +10,14 @@ interface TimeSlotPickerProps {
 const TimeSlotPicker = ({ selectedSlot, onSelectSlot }: TimeSlotPickerProps) => {
   const { t } = useLanguage();
   const timeSlots = [
-    { id: "6am-8am", time: "6:00 AM - 8:00 AM", price: "₹800" },
-    { id: "8am-10am", time: "8:00 AM - 10:00 AM", price: "₹1000" },
-    { id: "10am-12pm", time: "10:00 AM - 12:00 PM", price: "₹1200" },
-    { id: "12pm-2pm", time: "12:00 PM - 2:00 PM", price: "₹1000" },
-    { id: "2pm-4pm", time: "2:00 PM - 4:00 PM", price: "₹1000" },
-    { id: "4pm-6pm", time: "4:00 PM - 6:00 PM", price: "₹1200" },
-    { id: "6pm-8pm", time: "6:00 PM - 8:00 PM", price: "₹1500" },
-    { id: "8pm-10pm", time: "8:00 PM - 10:00 PM", price: "₹1500" },
+    { id: "6am-8am", time: "6:00 AM - 8:00 AM", price: "৳800" },
+    { id: "8am-10am", time: "8:00 AM - 10:00 AM", price: "৳1000" },
+    { id: "10am-12pm", time: "10:00 AM - 12:00 PM", price: "৳1200" },
+    { id: "12pm-2pm", time: "12:00 PM - 2:00 PM", price: "৳1000" },
+    { id: "2pm-4pm", time: "2:00 PM - 4:00 PM", price: "৳1000" },
+    { id: "4pm-6pm", time: "4:00 PM - 6:00 PM", price: "৳1200" },
+    { id: "6pm-8pm", time: "6:00 PM - 8:00 PM", price: "৳1500" },
+    { id: "8pm-10pm", time: "8:00 PM - 10:00 PM", price: "৳1500" },
   ];
 
   return (

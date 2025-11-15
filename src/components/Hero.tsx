@@ -94,8 +94,17 @@ const Hero = () => {
         </Button>
       </div>
 
+      {/* Sabdi TurfZone Text - Bottom, Moving Right to Left */}
+      <div className="absolute bottom-0 left-0 right-0 z-20 overflow-hidden flex items-end">
+        <div className="animate-slide-right-to-left">
+          <h2 className="text-8xl md:text-9xl lg:text-[12rem] font-black text-white/20 md:text-white/30 leading-none tracking-tight whitespace-nowrap inline-block">
+            Sabdi TurfZone
+          </h2>
+        </div>
+      </div>
+
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
         <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-primary-foreground/50 rounded-full animate-pulse" />
         </div>
@@ -142,6 +151,15 @@ const Hero = () => {
           }
         }
         
+        @keyframes slide-right-to-left {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+        
         .animate-fade-in {
           animation: fade-in 1s ease-out;
         }
@@ -156,6 +174,10 @@ const Hero = () => {
         
         .animate-subtle-zoom {
           animation: subtle-zoom 20s ease-in-out infinite;
+        }
+        
+        .animate-slide-right-to-left {
+          animation: slide-right-to-left 15s linear infinite;
         }
       `}</style>
     </section>
