@@ -2,9 +2,30 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Card } from "@/components/ui/card";
 import { Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleBookingClick = () => {
+    // Navigate to home page and scroll to booking section
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const bookingSection = document.getElementById("booking");
+        if (bookingSection) {
+          bookingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    } else {
+      const bookingSection = document.getElementById("booking");
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
 
   const pricingSlots = [
     {
@@ -110,6 +131,17 @@ const Pricing = () => {
                 </table>
               </div>
             </Card>
+          </div>
+
+          {/* Booking CTA Button */}
+          <div className="text-center mt-12">
+            <Button
+              onClick={handleBookingClick}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+              size="lg"
+            >
+              {t("bookYourTurf")}
+            </Button>
           </div>
         </div>
       </main>

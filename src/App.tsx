@@ -4,6 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { LoadingProvider } from "@/contexts/LoadingContext";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import LanguageButton from "@/components/LanguageButton";
+import PageLoader from "@/components/PageLoader";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Amenities from "./pages/Amenities";
@@ -20,10 +24,17 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <LanguageProvider>
-      <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+      <LoadingProvider>
+        <TooltipProvider>
+        <PageLoader />
+        <Toaster />
+        <Sonner />
+        <BrowserRouter
+          future={{
+            v7_startTransition: true,
+            v7_relativeSplatPath: true,
+          }}
+        >
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
@@ -37,8 +48,12 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Global Floating Buttons */}
+        <WhatsAppButton />
+        <LanguageButton />
       </BrowserRouter>
     </TooltipProvider>
+    </LoadingProvider>
     </LanguageProvider>
   </QueryClientProvider>
 );

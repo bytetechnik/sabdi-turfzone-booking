@@ -31,7 +31,7 @@ const translations = {
     changingRooms: "Changing Rooms",
     changingRoomsDesc: "Clean and spacious facilities for teams",
     flexibleTiming: "Flexible Timing",
-    flexibleTimingDesc: "Book slots from 6 AM to 10 PM every day",
+    flexibleTimingDesc: "Book slots from 6 AM to 3 AM every day",
     
     // Booking
     bookYourTurf: "Book Your Turf",
@@ -150,21 +150,21 @@ const translations = {
     faqTitle: "Frequently Asked Questions",
     faqDesc: "Find answers to common questions about booking and using our facilities",
     faqBookingQuestion: "How do I book a turf slot?",
-    faqBookingAnswer: "You can book a slot through our website by selecting your sport, choosing a time slot, and filling in your details. Alternatively, contact us via WhatsApp or phone for quick booking assistance.",
+    faqBookingAnswer: "You can book a slot through our website by selecting your sport (Cricket or Football), choosing a date and time slot, and filling in your contact details. Alternatively, you can contact us directly via WhatsApp or phone for quick booking assistance and personalized service.",
     faqPricingQuestion: "What are the pricing rates?",
-    faqPricingAnswer: "Cricket turf: ৳2,000-3,000 per hour (varies by time). Football turf: ৳2,500-3,500 per hour (varies by time). Evening and weekend slots may have different rates. Contact us for current pricing and special packages.",
+    faqPricingAnswer: "Our pricing varies by time slot and day. Morning slots: ৳2,000 (weekdays) / ৳2,500 (weekends). Afternoon-Evening slots: ৳2,500 (weekdays) / ৳3,000 (weekends). Night slots: ৳3,000 (weekdays) / ৳3,500 (weekends). Midnight slots: ৳2,500 (weekdays) / ৳3,000 (weekends). All rates are per slot. The same pricing applies to both cricket and football. Contact us for current pricing and special packages.",
     faqCancellationQuestion: "What is the cancellation policy?",
     faqCancellationAnswer: "Cancellations made 24 hours before the booking time are eligible for a full refund. Cancellations made less than 24 hours in advance may incur a cancellation fee. No refund for no-shows.",
     faqTimingQuestion: "What are the operating hours?",
-    faqTimingAnswer: "We are open every day from 6:00 AM to 10:00 PM. You can book hourly slots within these timings. Early morning and late evening slots are subject to availability.",
+    faqTimingAnswer: "We are open every day from 6:00 AM to 3:00 AM. You can book slots within these timings. Our time slots are: Morning (6:00 AM - 1:30 PM), Afternoon-Evening (3:00 PM - 6:00 PM), Night (6:00 PM - 12:00 AM), and Midnight (12:00 AM - 3:00 AM). All slots are subject to availability.",
     faqPaymentQuestion: "What payment methods do you accept?",
-    faqPaymentAnswer: "We accept cash, bKash, Nagad, Rocket, and bank transfers. Advance payment may be required to confirm your booking. Payment details will be shared upon booking confirmation.",
+    faqPaymentAnswer: "We accept cash, bKash, Nagad, Rocket, and bank transfers. Advance payment is typically required to confirm your booking. Payment details and instructions will be shared upon booking confirmation. For your convenience, you can also pay on-site, but advance booking confirmation is recommended.",
     faqRulesQuestion: "What are the facility rules?",
     faqRulesAnswer: "Proper sports footwear required. No spikes allowed on turf. Respect other players and facility property. No smoking or alcohol on premises. Follow staff instructions at all times. Damage to facility will be charged.",
     faqEquipmentQuestion: "Do you provide sports equipment?",
-    faqEquipmentAnswer: "Basic equipment like balls and cones are available. However, we recommend bringing your own equipment for best experience. Sports gear can be arranged on request with prior notice.",
+    faqEquipmentAnswer: "We provide football and gloves for your convenience. Basic equipment like balls and cones are also available. However, we recommend bringing your own equipment for the best experience. Additional sports gear can be arranged on request with prior notice.",
     faqWeatherQuestion: "What happens in bad weather?",
-    faqWeatherAnswer: "In case of heavy rain or severe weather conditions, bookings may be rescheduled or refunded. We will notify you as soon as possible. Our turf has good drainage for light rain play.",
+    faqWeatherAnswer: "In case of heavy rain or severe weather conditions, bookings may be rescheduled or refunded at no extra charge. We will notify you as soon as possible if weather conditions affect your booking. Our turf has excellent drainage, so light rain typically doesn't affect play. Please contact us if you have concerns about weather conditions.",
     
     // Privacy Policy
     privacyPolicyTitle: "Privacy Policy",
@@ -175,7 +175,7 @@ const translations = {
     dataProtection: "Data Protection",
     dataProtectionDesc: "We implement appropriate security measures to protect your personal information against unauthorized access or disclosure.",
     contactPrivacy: "Contact Us",
-    contactPrivacyDesc: "If you have any questions about our privacy policy, please contact us at info@sabditurfzone.com",
+    contactPrivacyDesc: "If you have any questions about our privacy policy, please contact us at sabditurfzone@gmail.com",
     
     // Terms & Conditions
     termsConditionsTitle: "Terms & Conditions",
@@ -210,7 +210,7 @@ const translations = {
     changingRooms: "চেঞ্জিং রুম",
     changingRoomsDesc: "দলগুলির জন্য পরিষ্কার এবং প্রশস্ত সুবিধা",
     flexibleTiming: "নমনীয় সময়",
-    flexibleTimingDesc: "প্রতিদিন সকাল ৬টা থেকে রাত ১০টা পর্যন্ত বুক করুন",
+    flexibleTimingDesc: "প্রতিদিন সকাল ৬টা থেকে রাত ৩টা পর্যন্ত বুক করুন",
     
     // Booking
     bookYourTurf: "আপনার টার্ফ বুক করুন",
@@ -243,7 +243,7 @@ const translations = {
     
     // Navigation
     aboutUs: "আমাদের সম্পর্কে",
-    amenities: "সুবিধা ও সুযোগ-সুবিধা",
+    amenities: "সুযোগ-সুবিধা",
     gallery: "গ্যালারি",
     contactUs: "যোগাযোগ করুন",
     privacyPolicy: "গোপনীয়তা নীতি",
@@ -329,21 +329,21 @@ const translations = {
     faqTitle: "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী",
     faqDesc: "বুকিং এবং আমাদের সুবিধা ব্যবহার সম্পর্কে সাধারণ প্রশ্নের উত্তর খুঁজুন",
     faqBookingQuestion: "আমি কীভাবে টার্ফ স্লট বুক করব?",
-    faqBookingAnswer: "আপনি আমাদের ওয়েবসাইটের মাধ্যমে আপনার খেলা নির্বাচন করে, একটি সময় স্লট চয়ন করে এবং আপনার বিবরণ পূরণ করে একটি স্লট বুক করতে পারেন। বিকল্পভাবে, দ্রুত বুকিং সহায়তার জন্য হোয়াটসঅ্যাপ বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+    faqBookingAnswer: "আপনি আমাদের ওয়েবসাইটের মাধ্যমে আপনার খেলা (ক্রিকেট বা ফুটবল) নির্বাচন করে, একটি তারিখ এবং সময় স্লট চয়ন করে এবং আপনার যোগাযোগের বিবরণ পূরণ করে একটি স্লট বুক করতে পারেন। বিকল্পভাবে, দ্রুত বুকিং সহায়তা এবং ব্যক্তিগত সেবার জন্য আপনি সরাসরি হোয়াটসঅ্যাপ বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করতে পারেন।",
     faqPricingQuestion: "মূল্য হার কত?",
-    faqPricingAnswer: "ক্রিকেট টার্ফ: ৳২,০০০-৩,০০০ প্রতি ঘণ্টা (সময় অনুযায়ী পরিবর্তিত)। ফুটবল টার্ফ: ৳২,৫০০-৩,৫০০ প্রতি ঘণ্টা (সময় অনুযায়ী পরিবর্তিত)। সন্ধ্যা এবং সপ্তাহান্তের স্লটে বিভিন্ন হার থাকতে পারে। বর্তমান মূল্য এবং বিশেষ প্যাকেজের জন্য আমাদের সাথে যোগাযোগ করুন।",
+    faqPricingAnswer: "আমাদের মূল্য সময় স্লট এবং দিন অনুযায়ী পরিবর্তিত হয়। সকালের স্লট: ৳২,০০০ (সপ্তাহের দিন) / ৳২,৫০০ (সপ্তাহান্ত)। বিকাল-সন্ধ্যার স্লট: ৳২,৫০০ (সপ্তাহের দিন) / ৳৩,০০০ (সপ্তাহান্ত)। রাতের স্লট: ৳৩,০০০ (সপ্তাহের দিন) / ৳৩,৫০০ (সপ্তাহান্ত)। মধ্যরাতের স্লট: ৳২,৫০০ (সপ্তাহের দিন) / ৳৩,০০০ (সপ্তাহান্ত)। সমস্ত হার প্রতি স্লটের জন্য। ক্রিকেট এবং ফুটবল উভয়ের জন্য একই মূল্য প্রযোজ্য। বর্তমান মূল্য এবং বিশেষ প্যাকেজের জন্য আমাদের সাথে যোগাযোগ করুন।",
     faqCancellationQuestion: "বাতিলকরণ নীতি কী?",
     faqCancellationAnswer: "বুকিং সময়ের ২৪ ঘণ্টা আগে করা বাতিলকরণ সম্পূর্ণ রিফান্ডের জন্য যোগ্য। ২৪ ঘণ্টারও কম সময়ে করা বাতিলকরণে বাতিলকরণ ফি লাগতে পারে। না-আসার জন্য কোনও রিফান্ড নেই।",
     faqTimingQuestion: "পরিচালন সময় কী?",
-    faqTimingAnswer: "আমরা প্রতিদিন সকাল ৬:০০ টা থেকে রাত ১০:০০ টা পর্যন্ত খোলা থাকি। আপনি এই সময়ের মধ্যে প্রতি ঘণ্টায় স্লট বুক করতে পারেন। ভোরবেলা এবং গভীর সন্ধ্যার স্লট প্রাপ্যতা সাপেক্ষে।",
+    faqTimingAnswer: "আমরা প্রতিদিন সকাল ৬:০০ টা থেকে রাত ৩:০০ টা পর্যন্ত খোলা থাকি। আপনি এই সময়ের মধ্যে স্লট বুক করতে পারেন। আমাদের সময় স্লটগুলি হল: সকাল (সকাল ৬:০০ - দুপুর ১:৩০), বিকাল-সন্ধ্যা (বিকাল ৩:০০ - সন্ধ্যা ৬:০০), রাত (সন্ধ্যা ৬:০০ - রাত ১২:০০), এবং মধ্যরাত (রাত ১২:০০ - ভোর ৩:০০)। সমস্ত স্লট প্রাপ্যতা সাপেক্ষে।",
     faqPaymentQuestion: "আপনারা কোন পেমেন্ট পদ্ধতি গ্রহণ করেন?",
-    faqPaymentAnswer: "আমরা নগদ, বিকাশ, নগদ, রকেট এবং ব্যাংক স্থানান্তর গ্রহণ করি। আপনার বুকিং নিশ্চিত করতে অগ্রিম পেমেন্ট প্রয়োজন হতে পারে। বুকিং নিশ্চিতকরণের পরে পেমেন্টের বিবরণ শেয়ার করা হবে।",
+    faqPaymentAnswer: "আমরা ক্যাশ, বিকাশ, নগদ, রকেট এবং ব্যাংক স্থানান্তর গ্রহণ করি। আপনার বুকিং নিশ্চিত করতে সাধারণত অগ্রিম পেমেন্ট প্রয়োজন। বুকিং নিশ্চিতকরণের পরে পেমেন্টের বিবরণ এবং নির্দেশাবলী শেয়ার করা হবে। আপনার সুবিধার জন্য, আপনি সাইটেও পেমেন্ট করতে পারেন, তবে অগ্রিম বুকিং নিশ্চিতকরণ সুপারিশ করা হয়।",
     faqRulesQuestion: "সুবিধা নিয়মাবলী কী?",
     faqRulesAnswer: "সঠিক ক্রীড়া পাদুকা প্রয়োজন। টার্ফে কোনো স্পাইক অনুমোদিত নয়। অন্যান্য খেলোয়াড় এবং সুবিধা সম্পত্তি সম্মান করুন। প্রাঙ্গণে ধূমপান বা অ্যালকোহল নেই। সর্বদা স্টাফ নির্দেশাবলী অনুসরণ করুন। সুবিধার ক্ষতি চার্জ করা হবে।",
     faqEquipmentQuestion: "আপনারা কি ক্রীড়া সরঞ্জাম সরবরাহ করেন?",
-    faqEquipmentAnswer: "বল এবং শঙ্কুর মতো মৌলিক সরঞ্জাম উপলব্ধ। তবে, আমরা সেরা অভিজ্ঞতার জন্য আপনার নিজস্ব সরঞ্জাম আনার পরামর্শ দিই। পূর্ব বিজ্ঞপ্তির সাথে অনুরোধে ক্রীড়া সরঞ্জাম ব্যবস্থা করা যেতে পারে।",
+    faqEquipmentAnswer: "আমরা আপনার সুবিধার জন্য ফুটবল এবং গ্লাভস প্রদান করি। বল এবং শঙ্কুর মতো মৌলিক সরঞ্জামও উপলব্ধ। তবে, আমরা সেরা অভিজ্ঞতার জন্য আপনার নিজস্ব সরঞ্জাম আনার পরামর্শ দিই। পূর্ব বিজ্ঞপ্তির সাথে অনুরোধে অতিরিক্ত ক্রীড়া সরঞ্জাম ব্যবস্থা করা যেতে পারে।",
     faqWeatherQuestion: "খারাপ আবহাওয়ায় কী ঘটে?",
-    faqWeatherAnswer: "ভারী বৃষ্টি বা গুরুতর আবহাওয়া পরিস্থিতিতে, বুকিং পুনঃনির্ধারিত বা রিফান্ড করা যেতে পারে। আমরা যত তাড়াতাড়ি সম্ভব আপনাকে অবহিত করব। হালকা বৃষ্টির খেলার জন্য আমাদের টার্ফে ভাল নিষ্কাশন রয়েছে।",
+    faqWeatherAnswer: "ভারী বৃষ্টি বা গুরুতর আবহাওয়া পরিস্থিতিতে, বুকিং অতিরিক্ত চার্জ ছাড়াই পুনঃনির্ধারিত বা রিফান্ড করা যেতে পারে। আবহাওয়া পরিস্থিতি আপনার বুকিংকে প্রভাবিত করলে আমরা যত তাড়াতাড়ি সম্ভব আপনাকে অবহিত করব। আমাদের টার্ফে চমৎকার নিষ্কাশন রয়েছে, তাই হালকা বৃষ্টি সাধারণত খেলাকে প্রভাবিত করে না। আবহাওয়া পরিস্থিতি সম্পর্কে আপনার কোনও উদ্বেগ থাকলে অনুগ্রহ করে আমাদের সাথে যোগাযোগ করুন।",
     
     // Privacy Policy
     privacyPolicyTitle: "গোপনীয়তা নীতি",
@@ -354,7 +354,7 @@ const translations = {
     dataProtection: "ডেটা সুরক্ষা",
     dataProtectionDesc: "আমরা অননুমোদিত প্রবেশ বা প্রকাশের বিরুদ্ধে আপনার ব্যক্তিগত তথ্য রক্ষা করতে উপযুক্ত নিরাপত্তা ব্যবস্থা বাস্তবায়ন করি।",
     contactPrivacy: "আমাদের সাথে যোগাযোগ করুন",
-    contactPrivacyDesc: "আমাদের গোপনীয়তা নীতি সম্পর্কে আপনার কোনো প্রশ্ন থাকলে, অনুগ্রহ করে info@sabditurfzone.com এ আমাদের সাথে যোগাযোগ করুন",
+    contactPrivacyDesc: "আমাদের গোপনীয়তা নীতি সম্পর্কে আপনার কোনো প্রশ্ন থাকলে, অনুগ্রহ করে sabditurfzone@gmail.com এ আমাদের সাথে যোগাযোগ করুন",
     
     // Terms & Conditions
     termsConditionsTitle: "শর্তাবলী",

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "@/components/NavLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Menu, X, Languages, ChevronDown } from "lucide-react";
+import { useLoading } from "@/contexts/LoadingContext";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -14,6 +15,7 @@ import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const { t, language, setLanguage } = useLanguage();
+  const { isLoading } = useLoading();
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -24,15 +26,42 @@ const Navbar = () => {
     { to: "/contact", label: t("contactUs") },
   ];
 
+  const handleBookingClick = (e?: React.MouseEvent<HTMLButtonElement>) => {
+    e?.preventDefault();
+    setIsOpen(false);
+    
+    // If we're not on the home page, navigate first
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation, then scroll
+      setTimeout(() => {
+        const bookingSection = document.getElementById("booking");
+        if (bookingSection) {
+          bookingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    } else {
+      // We're already on home page, just scroll
+      const bookingSection = document.getElementById("booking");
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 shadow-[0_4px_24px_-8px_rgba(139,92,246,0.3)]">
       <div className="max-w-7xl mx-auto px-4 relative">
         {/* Gradient Accent Line */}
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <NavLink to="/" className="flex items-center">
-            <img src={logo} alt="Sabdi TurfZone" className="h-20 w-20 md:h-24 md:w-24 object-contain" />
+          {/* Logo - Home Link */}
+          <NavLink 
+            to="/" 
+            className={`flex items-center transition-all duration-300 hover:opacity-80 ${isLoading ? "opacity-0" : "opacity-100"}`}
+            title={t("home")}
+          >
+            <img src={logo} alt="Sabdi TurfZone" className="h-20 w-20 md:h-24 md:w-24 object-contain cursor-pointer" />
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -82,15 +111,12 @@ const Navbar = () => {
               </NavLink>
             ))}
             
-            {/* Language Toggle - Desktop */}
+            {/* Booking CTA */}
             <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setLanguage(language === "en" ? "bn" : "en")}
-              className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all text-white"
+              onClick={handleBookingClick}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              <Languages className="mr-2 h-4 w-4" />
-              {language === "en" ? "বাংলা" : "English"}
+              {t("bookYourTurf")}
             </Button>
           </div>
 
@@ -152,15 +178,12 @@ const Navbar = () => {
                 </NavLink>
               ))}
               
-              {/* Language Toggle - Mobile */}
+              {/* Booking CTA - Mobile */}
               <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setLanguage(language === "en" ? "bn" : "en")}
-                className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all text-white mx-4"
+                onClick={handleBookingClick}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg mx-4"
               >
-                <Languages className="mr-2 h-4 w-4" />
-                {language === "en" ? "বাংলা" : "English"}
+                {t("bookYourTurf")}
               </Button>
             </div>
           </div>

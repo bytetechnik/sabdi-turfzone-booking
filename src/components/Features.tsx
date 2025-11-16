@@ -97,7 +97,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="relative w-full">
+        <div className="relative w-full px-8 md:px-12 lg:px-16 xl:px-20">
           <Carousel
             setApi={setApi}
             opts={{

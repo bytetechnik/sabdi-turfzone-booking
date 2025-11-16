@@ -51,11 +51,25 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="bg-primary/5 rounded-2xl p-8 md:p-12">
+          <div className="bg-primary/5 rounded-2xl p-8 md:p-12 mb-8">
             <h2 className="text-3xl font-bold mb-6 text-foreground text-center">{t("location")}</h2>
-            <p className="text-center text-muted-foreground text-lg">
+            <p className="text-center text-muted-foreground text-lg mb-8">
               Nirpodi Purbopara near Bridge, Sabdi, Bondorm Narayonganj
             </p>
+            
+            {/* Google Maps Embed */}
+            <div className="w-full rounded-lg overflow-hidden shadow-2xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4337.210855557411!2d90.54415619999999!3d23.5900765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b3004b9ccb6d%3A0x6f5bb6a591bc4b3f!2ssabdi%20turf%20zone!5e1!3m2!1sen!2sde!4v1763318080764!5m2!1sen!2sde"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       </main>

@@ -1,73 +1,156 @@
-# Welcome to your Lovable project
+# Sabdi TurfZone - Premium Cricket & Football Turf Booking
 
-## Project info
+A modern web application for booking premium turf fields for cricket and football. Built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/21c1b33f-36dd-4b97-8776-de2b85bc6665
+## Project Overview
 
-## How can I edit this code?
+Sabdi TurfZone is a comprehensive booking platform that allows users to reserve premium turf fields for cricket and football. The application features a multilingual interface, real-time booking system, and a user-friendly design.
 
-There are several ways of editing your application.
+## About ByteTechnik
 
-**Use Lovable**
+This project is developed by **ByteTechnik**, a leading IT solutions provider based in Frankfurt, Germany.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/21c1b33f-36dd-4b97-8776-de2b85bc6665) and start prompting.
+ByteTechnik delivers innovative IT solutions including:
+- Software Development
+- Network Infrastructure
+- Cybersecurity
+- IT Consulting
 
-Changes made via Lovable will be committed automatically to this repo.
+We help businesses worldwide simplify operations, enhance security, and drive growth with tailored, reliable technology solutions. Focused on long-term partnerships, we empower clients to navigate the digital world with confidence.
 
-**Use your preferred IDE**
+**Visit us:** [bytetechnik.de](https://bytetechnik.de)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Contact ByteTechnik
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**ByteTechnik UG**  
+Grüne Strasse 1  
+60316 Frankfurt am Main  
+Germany
 
-Follow these steps:
+**Email:** [email protected]  
+**Phone:** +49 176 24854253
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn package manager
+
+### Installation
+
+Follow these steps to set up the project locally:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd "Sabdi TurfZone"
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install the necessary dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The development server will start on `http://localhost:8080` (or the next available port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start the development server with hot-reload
+- `npm run build` - Build the project for production
+- `npm run build:dev` - Build the project in development mode
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Technologies Used
 
-## What technologies are used for this project?
+This project is built with modern web technologies:
 
-This project is built with:
+- **Vite** - Next-generation frontend build tool
+- **React 18** - UI library for building user interfaces
+- **TypeScript** - Typed superset of JavaScript
+- **shadcn-ui** - High-quality React component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Declarative routing for React
+- **TanStack Query** - Powerful data synchronization for React
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+Sabdi TurfZone/
+├── public/          # Static assets
+├── src/
+│   ├── components/  # React components
+│   ├── contexts/    # React contexts (Language, etc.)
+│   ├── hooks/       # Custom React hooks
+│   ├── lib/         # Utility functions
+│   ├── pages/       # Page components
+│   └── assets/      # Images and other assets
+├── index.html       # HTML entry point
+└── vite.config.ts   # Vite configuration
+```
 
-Simply open [Lovable](https://lovable.dev/projects/21c1b33f-36dd-4b97-8776-de2b85bc6665) and click on Share -> Publish.
+## Features
 
-## Can I connect a custom domain to my Lovable project?
+- 🌐 **Multilingual Support** - Available in multiple languages
+- 📅 **Booking System** - Easy-to-use booking interface
+- ⚽ **Sport Selection** - Support for Cricket and Football
+- 🕐 **Time Slot Management** - Flexible timing from 6 AM to 10 PM
+- 💰 **Pricing Information** - Transparent pricing display
+- 📱 **Responsive Design** - Works on all devices
+- 📞 **Contact Integration** - WhatsApp and contact form support
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Building for Production
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```sh
+npm run build
+```
+
+This will create an optimized production build in the `dist` directory.
+
+### Deployment Options
+
+You can deploy this project to various platforms:
+
+- **Vercel** - Recommended for React applications
+- **Netlify** - Great for static sites
+- **GitHub Pages** - Free hosting for public repositories
+- **Custom Server** - Deploy the `dist` folder to any web server
+
+## Development
+
+### Code Style
+
+This project uses ESLint for code quality. Run the linter:
+
+```sh
+npm run lint
+```
+
+### Contributing
+
+1. Create a feature branch
+2. Make your changes
+3. Test thoroughly
+4. Submit a pull request
+
+## License
+
+This project is proprietary software developed by ByteTechnik for Sabdi TurfZone.
+
+## Support
+
+For technical support or inquiries about this project, please contact ByteTechnik:
+
+- **Website:** [bytetechnik.de](https://bytetechnik.de)
+- **Email:** [email protected]
+- **Phone:** +49 176 24854253
+
+---
+
+**Developed with ❤️ by ByteTechnik**
