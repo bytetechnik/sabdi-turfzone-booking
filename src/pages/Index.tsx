@@ -22,7 +22,7 @@ const Index = () => {
   };
 
   const handleFacebookClick = () => {
-    window.open("https://www.facebook.com/profile.php?id=61581025367266", "_blank");
+    window.open("https://www.facebook.com/sabditurfzone", "_blank");
   };
 
   return (
