@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode, useEffect } from "react";
 
 type Language = "en" | "bn";
 
@@ -146,6 +146,8 @@ const translations = {
     bookViaWhatsApp: "Book via WhatsApp",
     whatsappMessage: "Hello! I would like to book a turf slot at Sabdi TurfZone. Could you please provide more information?",
     
+    bookViaFacebook: "Book via Facebook",
+
     // FAQ
     faqTitle: "Frequently Asked Questions",
     faqDesc: "Find answers to common questions about booking and using our facilities",
@@ -324,6 +326,8 @@ const translations = {
     // WhatsApp
     bookViaWhatsApp: "হোয়াটসঅ্যাপের মাধ্যমে বুক করুন",
     whatsappMessage: "হ্যালো! আমি সাবদি টার্ফজোনে একটি টার্ফ স্লট বুক করতে চাই। আপনি কি আরও তথ্য প্রদান করতে পারেন?",
+
+    bookViaFacebook: "ফেসবুক মাধ্যমে বুক করুন",
     
     // FAQ
     faqTitle: "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী",
@@ -375,6 +379,12 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("en");
+
+  // Update body data attribute and HTML lang attribute when language changes
+  useEffect(() => {
+    document.body.setAttribute("data-language", language);
+    document.documentElement.setAttribute("lang", language);
+  }, [language]);
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations.en] || key;

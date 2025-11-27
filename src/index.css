@@ -113,4 +113,16 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Apply Bengali font when language is Bangla */
+  body[data-language="bn"] {
+    font-family: 'Noto Sans Bengali', 'Kalpurush', 'Arial Unicode MS', sans-serif;
+  }
+
+  /* Ensure all text elements use Bengali font when language is Bangla */
+  body[data-language="bn"] *,
+  body[data-language="bn"] *::before,
+  body[data-language="bn"] *::after {
+    font-family: 'Noto Sans Bengali', 'Kalpurush', 'Arial Unicode MS', sans-serif !important;
+  }
 }
